@@ -1,70 +1,72 @@
 # 🚀 ContentForge AI
 
-**1 Idea → 10+ Viral Content Pieces in Seconds**
+**1 Idea → 10+ Viral Content Pieces in Seconds.**
 
-ContentForge AI is an AI-powered content engine that transforms a single YouTube video, raw idea, or script into a comprehensive distribution strategy. Stop spending hours repurposing content manually—let AI handle the heavy lifting.
+ContentForge AI is a high-performance content engine designed for the modern creator. It transforms a single source of truth—whether a YouTube video, a raw idea, or a script—into a comprehensive cross-platform distribution strategy.
+
+Built on **Puter.js v2**, ContentForge eliminates backend complexity, providing serverless AI and cloud storage directly in the browser.
 
 ---
 
-## 💡 The Problem
-Creators today struggle with:
-- **Inconsistency**: Maintaining a presence across multiple platforms (Twitter, LinkedIn, YouTube).
-- **Time Constraints**: Traditional content repurposing is slow and tedious.
-- **Idea Fatigue**: Knowing *what* to post where is often harder than the content itself.
-- **Limited Reach**: Great content fails because it's not optimized for different platform algorithms.
-
 ## ✨ Features
-- **Smart Repurposing**: Convert a YouTube link or topic into platform-ready content.
-- **Twitter Thread Generator**: Get 5 viral-style tweets with compelling hooks.
-- **Short-Form Video Scripts**: Pro-level scripts for Reels, TikToks, and Shorts.
-- **LinkedIn Authority Posts**: Long-form posts designed for professional engagement.
-- **Clean Minimalist UI**: Kinde-inspired design system with premium typography and spacing.
-- **Puter.js Integration**: Zero-latency AI, cloud storage, and NoSQL direct in the browser.
 
-## 🛠️ Tech Stack
-- **Framework**: [Next.js 15+](https://nextjs.org/)
-- **Infrastructure**: [Puter.js v2](https://js.puter.com/v2/)
-- **Runtime**: [Bun](https://bun.sh/)
-- **Deployment**: [Cloudflare Pages](https://pages.cloudflare.com/)
-- **AI Engine**: OpenAI / Google Gemini / Claude (via Puter)
-- **Styling**: Tailwind CSS v4 + Vanilla CSS Design System
+- **The Forge Workspace**: A high-speed interface to "forge" content for X (Twitter), LinkedIn, and YouTube Shorts.
+- **AI-Powered Strategist**: Leverages Claude 3.5 Sonnet & GPT-4o via Puter for high-authority, viral-ready copy.
+- **Content Library**: Save your generated pieces securely to Puter's Cloud Storage (`puterFS`).
+- **Serverless Backend**: No database management, No API keys required in your `.env`.
+- **Kinde-Inspired Design**: A premium, minimalist UI optimized for focus and speed.
+- **Full SEO Optimization**: Built with Next.js 15 Server Components for maximum visibility.
+
+---
+
+## 🛠️ Architecture
+
+ContentForge uses a **Client-Side Cloud** approach:
+
+1.  **Framework**: Next.js 15+ (App Router)
+2.  **Infrastructure**: Puter.js v2 (Auth, Cloud Storage, NoSQL, AI)
+3.  **Styling**: Vanilla CSS + Tailwind CSS v4 (Design Tokens)
+4.  **Runtime**: Bun (Fastest JS runtime)
+5.  **Deployment**: Cloudflare Pages / Workers
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-Make sure you have [Bun](https://bun.sh/) installed.
+- [Bun](https://bun.sh/) installed on your machine.
+- A [Puter.js](https://puter.com) account (automatically handled via Auth).
 
 ### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/contentforge.git
-   cd contentforge
-   ```
-2. Install dependencies:
-   ```bash
-   bun install
-   ```
-3. Set up environment variables:
-   Create a `.env.local` file and add your AI API keys:
-   ```env
-   OPENAI_API_KEY=your_key_here
-   GEMINI_API_KEY=your_key_here
-   ```
-4. Run the development server:
-   ```bash
-   bun run dev
-   ```
-
-## 🎯 Our Mission
-> "Help creators win attention by turning one idea into unlimited content."
-
-## 🗺️ Roadmap
-- [ ] Multi-language support
-- [ ] Custom brand voice training
-- [ ] Direct publishing to X/LinkedIn
-- [ ] Team collaboration workspace
+1.  **Clone & Install**:
+    ```bash
+    git clone https://github.com/shaswatraj/contentforge.git
+    cd contentforge
+    bun install
+    ```
+2.  **Run Locally**:
+    ```bash
+    bun run dev
+    ```
+3.  **Deploy to Cloudflare**:
+    ```bash
+    bun run deploy
+    ```
 
 ---
 
-Built with ❤️ for creators.
-# ContentForge
+## 🗺️ Product Roadmap
+- [x] Multi-format generation (Tweets, Scripts, LinkedIn)
+- [x] Cloud Library persistence
+- [ ] **Viral Hook Engine**: Generate 10+ hook variations for any piece.
+- [ ] **Brand Voice Studio**: Train AI on your unique writing style.
+- [ ] **Virality Predictor**: AI-driven "attention score" for every forged piece.
+- [ ] **Direct X/LinkedIn Scheduler**: One-click publishing.
+- [ ] **Team Collaboration**: Collaborative forge workspaces.
+
+---
+
+## 🎯 Our Mission
+> "Help creators win the attention economy by turning every single idea into an empire."
+
+Built with ❤️ by **Antigravity**.

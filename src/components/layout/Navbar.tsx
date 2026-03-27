@@ -12,7 +12,7 @@ export default function Navbar() {
         </Link>
         <div className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-sm font-medium text-zinc-500 hover:text-black dark:hover:text-white transition-colors">Features</a>
-          <Link href="/puter-demo" className="text-sm font-medium text-zinc-500 hover:text-black dark:hover:text-white transition-colors">Puter Demo</Link>
+          <Link href="/dashboard" className="text-sm font-medium text-zinc-500 hover:text-black dark:hover:text-white transition-colors">Dashboard</Link>
           <a href="#" className="text-sm font-medium text-zinc-500 hover:text-black dark:hover:text-white transition-colors">Pricing</a>
         </div>
         <button className="px-5 py-2 bg-zinc-900 dark:bg-zinc-50 text-white dark:text-black text-sm font-semibold rounded-full hover:opacity-90 transition-all active:scale-[0.98]">

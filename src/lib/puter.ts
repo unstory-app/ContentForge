@@ -113,6 +113,11 @@ export const puterFS = {
     if (!puter) throw new Error("Puter.js not loaded");
     return await puter.fs.delete(path);
   },
+  mkdir: async (path: string): Promise<void> => {
+    const puter = getPuter();
+    if (!puter) throw new Error("Puter.js not loaded");
+    return await puter.fs.mkdir(path);
+  },
   list: async (path: string = '/'): Promise<PuterFile[]> => {
     const puter = getPuter();
     if (!puter) throw new Error("Puter.js not loaded");
