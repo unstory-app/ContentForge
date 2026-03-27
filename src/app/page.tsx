@@ -1,52 +1,94 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
-	return (
-		<div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-			<main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-				<Image className="dark:invert" src="/next.svg" alt="Next.js logo" width={180} height={38} priority />
-				<ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-					<li className="mb-2 tracking-[-.01em]">
-						Get started by editing{" "}
-						<code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-							src/app/page.tsx
-						</code>
-						.
-					</li>
-					<li className="tracking-[-.01em]">Save and see your changes instantly.</li>
-				</ol>
+  return (
+    <div className="min-h-screen bg-white dark:bg-[#09090b] text-zinc-900 dark:text-zinc-50 font-sans tracking-tight">
+      {/* Navigation */}
+      <nav className="border-b border-zinc-200 dark:border-zinc-800 px-6 py-4 backdrop-blur-md sticky top-0 z-50 bg-white/80 dark:bg-[#09090b]/80">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-black dark:bg-white rounded-lg flex items-center justify-center text-white dark:text-black font-bold text-xl">
+              C
+            </div>
+            <span className="font-bold text-xl uppercase tracking-tighter">ContentForge</span>
+          </div>
+          <div className="hidden md:flex items-center gap-8">
+            <a href="#features" className="text-sm font-medium text-zinc-500 hover:text-black dark:hover:text-white transition-colors">Features</a>
+            <Link href="/puter-demo" className="text-sm font-medium text-zinc-500 hover:text-black dark:hover:text-white transition-colors">Puter Demo</Link>
+            <a href="#" className="text-sm font-medium text-zinc-500 hover:text-black dark:hover:text-white transition-colors">Pricing</a>
+          </div>
+          <button className="px-5 py-2 bg-zinc-900 dark:bg-zinc-50 text-white dark:text-black text-sm font-semibold rounded-full hover:opacity-90 transition-all active:scale-[0.98]">
+            Get Started
+          </button>
+        </div>
+      </nav>
 
-				<div className="flex gap-4 items-center flex-col sm:flex-row">
-					<a
-						className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-						href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Read our docs
-					</a>
-				</div>
-			</main>
-			<footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-				<a
-					className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-					href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Image aria-hidden src="/file.svg" alt="File icon" width={16} height={16} />
-					Learn
-				</a>
-				<a
-					className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-					href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Image aria-hidden src="/globe.svg" alt="Globe icon" width={16} height={16} />
-					Go to nextjs.org →
-				</a>
-			</footer>
-		</div>
-	);
+      <main>
+        {/* Hero Section */}
+        <section className="max-w-7xl mx-auto px-6 pt-24 pb-32 text-center md:text-left">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-xs font-semibold text-zinc-600 dark:text-zinc-400 mb-8 animate-in fade-in slide-in-from-bottom-2 duration-700">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            Beta: 1 Idea → 10+ Viral Content Pieces
+          </div>
+          <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9] animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
+            TURN ONE IDEA <br />
+            <span className="text-zinc-300 dark:text-zinc-700">INTO AN EMPIRE.</span>
+          </h1>
+          <p className="max-w-2xl text-xl text-zinc-500 dark:text-zinc-400 mb-12 leading-relaxed animate-in fade-in slide-in-from-bottom-6 duration-700 delay-200">
+            ContentForge AI transforms your YouTube videos and scripts into 
+            platform-optimized threads, posts, and short-form scripts in seconds.
+            Built on Puter&apos;s serverless cloud infrastructure.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300">
+            <button className="px-8 py-4 bg-zinc-900 dark:bg-zinc-50 text-white dark:text-black font-bold rounded-2xl hover:opacity-90 transition-all shadow-xl shadow-zinc-200 dark:shadow-none">
+              Start Building Free
+            </button>
+            <Link href="/puter-demo" className="px-8 py-4 bg-transparent border border-zinc-200 dark:border-zinc-800 font-bold rounded-2xl hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all flex items-center justify-center">
+              Explore Puter APIs
+            </Link>
+          </div>
+        </section>
+
+        {/* Feature Grid */}
+        <section id="features" className="max-w-7xl mx-auto px-6 py-24 border-t border-zinc-100 dark:border-zinc-900">
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div>
+                <h3 className="text-xl font-bold mb-4">Multi-Platform</h3>
+                <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed">
+                  Generated content for Twitter, LinkedIn, and YouTube Shorts from a single input link.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-4">Cloud Native</h3>
+                <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed">
+                  Powered by Puter.js for zero-latency AI processing and secure cloud storage.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-4">SEO Optimized</h3>
+                <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed">
+                  Every output is designed to rank and capture maximum attention algorithmically.
+                </p>
+              </div>
+           </div>
+        </section>
+      </main>
+
+      <footer className="py-20 border-t border-zinc-100 dark:border-zinc-900">
+         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-8">
+           <div className="flex items-center gap-2 grayscale brightness-50 dark:brightness-200 opacity-50">
+              <Image src="/next.svg" alt="Next.js" width={100} height={20} />
+              <span className="text-xl font-bold">x PUTER</span>
+           </div>
+           <p className="text-zinc-400 text-sm">Built with passion for the creator economy.</p>
+         </div>
+      </footer>
+    </div>
+  );
 }

@@ -18,15 +18,16 @@ Creators today struggle with:
 - **Twitter Thread Generator**: Get 5 viral-style tweets with compelling hooks.
 - **Short-Form Video Scripts**: Pro-level scripts for Reels, TikToks, and Shorts.
 - **LinkedIn Authority Posts**: Long-form posts designed for professional engagement.
-- **Optimized Hooks**: AI-driven titles and descriptions to maximize CTR.
-- **Clean UI**: Minimalist card-based interface for easy copying and downloading.
+- **Clean Minimalist UI**: Kinde-inspired design system with premium typography and spacing.
+- **Puter.js Integration**: Zero-latency AI, cloud storage, and NoSQL direct in the browser.
 
 ## 🛠️ Tech Stack
-- **Framework**: [Next.js](https://nextjs.org/)
+- **Framework**: [Next.js 15+](https://nextjs.org/)
+- **Infrastructure**: [Puter.js v2](https://js.puter.com/v2/)
 - **Runtime**: [Bun](https://bun.sh/)
 - **Deployment**: [Cloudflare Pages](https://pages.cloudflare.com/)
-- **AI Engine**: OpenAI / Google Gemini
-- **Styling**: Vanilla CSS (Premium Aesthetics)
+- **AI Engine**: OpenAI / Google Gemini / Claude (via Puter)
+- **Styling**: Tailwind CSS v4 + Vanilla CSS Design System
 
 ## 🚀 Getting Started
 
